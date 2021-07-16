@@ -1,0 +1,6 @@
+framework module Pods_DigiPayCodeChallenge_DigiPayCodeChallengeUITests {
+  umbrella header "Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

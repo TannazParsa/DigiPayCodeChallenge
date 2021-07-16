@@ -1,0 +1,938 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D52428A277E6737A430E067 /* Pods_DigiPayCodeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F239C72144431E97CDEE7B7 /* Pods_DigiPayCodeChallenge.framework */; };
+		77A4C7B4E387AD52D660AD86 /* Pods_DigiPayCodeChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEC39FECA9EC42A9193D587 /* Pods_DigiPayCodeChallengeTests.framework */; };
+		B61B65E6269F935D00090F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B65E5269F935D00090F0B /* AppDelegate.swift */; };
+		B61B65E8269F935D00090F0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B65E7269F935D00090F0B /* SceneDelegate.swift */; };
+		B61B65EA269F935D00090F0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B65E9269F935D00090F0B /* ViewController.swift */; };
+		B61B65ED269F935D00090F0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61B65EB269F935D00090F0B /* Main.storyboard */; };
+		B61B65EF269F936200090F0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61B65EE269F936200090F0B /* Assets.xcassets */; };
+		B61B65F2269F936200090F0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61B65F0269F936200090F0B /* LaunchScreen.storyboard */; };
+		B61B65FD269F936300090F0B /* DigiPayCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B65FC269F936300090F0B /* DigiPayCodeChallengeTests.swift */; };
+		B61B6608269F936300090F0B /* DigiPayCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B6607269F936300090F0B /* DigiPayCodeChallengeUITests.swift */; };
+		B61B661D269F993100090F0B /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B6618269F993100090F0B /* Route.swift */; };
+		B61B661E269F993100090F0B /* AlamofireCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B6619269F993100090F0B /* AlamofireCodable.swift */; };
+		B61B661F269F993100090F0B /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B661A269F993100090F0B /* BaseResponse.swift */; };
+		B61B6620269F993100090F0B /* ServiceRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B661B269F993100090F0B /* ServiceRoute.swift */; };
+		B61B6621269F993100090F0B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B661C269F993100090F0B /* WebService.swift */; };
+		B61B6623269F9E5500090F0B /* CryptoCurrencyListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B6622269F9E5500090F0B /* CryptoCurrencyListResponse.swift */; };
+		B61B6626269FA01D00090F0B /* CryptoServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B6625269FA01D00090F0B /* CryptoServices.swift */; };
+		B61B6629269FA35400090F0B /* CryptoCurrencyListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B6628269FA35400090F0B /* CryptoCurrencyListVC.swift */; };
+		B61B662E269FA3BD00090F0B /* BaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B662C269FA3BD00090F0B /* BaseVM.swift */; };
+		B61B662F269FA3BD00090F0B /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B662D269FA3BD00090F0B /* BaseVC.swift */; };
+		B61B6632269FA3F700090F0B /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B6631269FA3F700090F0B /* Bindable.swift */; };
+		B61B6635269FA48C00090F0B /* CryptoCurrencyListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B6634269FA48C00090F0B /* CryptoCurrencyListVM.swift */; };
+		B61B6639269FA6B400090F0B /* CryptoCurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B6637269FA6B400090F0B /* CryptoCurrencyTableViewCell.swift */; };
+		B61B663A269FA6B400090F0B /* CryptoCurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61B6638269FA6B400090F0B /* CryptoCurrencyTableViewCell.xib */; };
+		B61B663C269FAFB400090F0B /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B663B269FAFB400090F0B /* DoubleExtensions.swift */; };
+		B61B663E26A06BA900090F0B /* CryptoListFilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B663D26A06BA900090F0B /* CryptoListFilterVC.swift */; };
+		B61B664126A06EB900090F0B /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B664026A06EB900090F0B /* Storyboards.swift */; };
+		B61B664426A0706000090F0B /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B664226A0706000090F0B /* FilterTableViewCell.swift */; };
+		B61B664526A0706000090F0B /* FilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61B664326A0706000090F0B /* FilterTableViewCell.xib */; };
+		B61B664726A1C07A00090F0B /* CryptoDetailsInfoRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B664626A1C07900090F0B /* CryptoDetailsInfoRes.swift */; };
+		B61B664A26A1C68200090F0B /* CryptoDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B664926A1C68200090F0B /* CryptoDetailsVC.swift */; };
+		B61B664C26A1C69E00090F0B /* CryptoDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61B664B26A1C69E00090F0B /* CryptoDetailsVM.swift */; };
+		FC513DC2002D469B9969A6FA /* Pods_DigiPayCodeChallenge_DigiPayCodeChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770FF1F4833F75FC089A0841 /* Pods_DigiPayCodeChallenge_DigiPayCodeChallengeUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B61B65F9269F936300090F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B61B65DA269F935C00090F0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B61B65E1269F935C00090F0B;
+			remoteInfo = DigiPayCodeChallenge;
+		};
+		B61B6604269F936300090F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B61B65DA269F935C00090F0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B61B65E1269F935C00090F0B;
+			remoteInfo = DigiPayCodeChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F239C72144431E97CDEE7B7 /* Pods_DigiPayCodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigiPayCodeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5196483C4D4DFE03CBDE096D /* Pods-DigiPayCodeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigiPayCodeChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-DigiPayCodeChallengeTests/Pods-DigiPayCodeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		770FF1F4833F75FC089A0841 /* Pods_DigiPayCodeChallenge_DigiPayCodeChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigiPayCodeChallenge_DigiPayCodeChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E6C89E22F419727FFDF1506 /* Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests/Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		973A5A3EC1034523127D1507 /* Pods-DigiPayCodeChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigiPayCodeChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-DigiPayCodeChallengeTests/Pods-DigiPayCodeChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BEC39FECA9EC42A9193D587 /* Pods_DigiPayCodeChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigiPayCodeChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12583DB5AE9F47E2D0A1F04 /* Pods-DigiPayCodeChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigiPayCodeChallenge.debug.xcconfig"; path = "Target Support Files/Pods-DigiPayCodeChallenge/Pods-DigiPayCodeChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		B61B65E2269F935C00090F0B /* DigiPayCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigiPayCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B61B65E5269F935D00090F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B61B65E7269F935D00090F0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B61B65E9269F935D00090F0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B61B65EC269F935D00090F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B61B65EE269F936200090F0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B61B65F1269F936200090F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B61B65F3269F936200090F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B61B65F8269F936300090F0B /* DigiPayCodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigiPayCodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B61B65FC269F936300090F0B /* DigiPayCodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiPayCodeChallengeTests.swift; sourceTree = "<group>"; };
+		B61B65FE269F936300090F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B61B6603269F936300090F0B /* DigiPayCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigiPayCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B61B6607269F936300090F0B /* DigiPayCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigiPayCodeChallengeUITests.swift; sourceTree = "<group>"; };
+		B61B6609269F936300090F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B61B6618269F993100090F0B /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		B61B6619269F993100090F0B /* AlamofireCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireCodable.swift; sourceTree = "<group>"; };
+		B61B661A269F993100090F0B /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		B61B661B269F993100090F0B /* ServiceRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceRoute.swift; sourceTree = "<group>"; };
+		B61B661C269F993100090F0B /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		B61B6622269F9E5500090F0B /* CryptoCurrencyListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyListResponse.swift; sourceTree = "<group>"; };
+		B61B6625269FA01D00090F0B /* CryptoServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoServices.swift; sourceTree = "<group>"; };
+		B61B6628269FA35400090F0B /* CryptoCurrencyListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyListVC.swift; sourceTree = "<group>"; };
+		B61B662C269FA3BD00090F0B /* BaseVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVM.swift; sourceTree = "<group>"; };
+		B61B662D269FA3BD00090F0B /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		B61B6631269FA3F700090F0B /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		B61B6634269FA48C00090F0B /* CryptoCurrencyListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyListVM.swift; sourceTree = "<group>"; };
+		B61B6637269FA6B400090F0B /* CryptoCurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		B61B6638269FA6B400090F0B /* CryptoCurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoCurrencyTableViewCell.xib; sourceTree = "<group>"; };
+		B61B663B269FAFB400090F0B /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		B61B663D26A06BA900090F0B /* CryptoListFilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListFilterVC.swift; sourceTree = "<group>"; };
+		B61B664026A06EB900090F0B /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		B61B664226A0706000090F0B /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		B61B664326A0706000090F0B /* FilterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTableViewCell.xib; sourceTree = "<group>"; };
+		B61B664626A1C07900090F0B /* CryptoDetailsInfoRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailsInfoRes.swift; sourceTree = "<group>"; };
+		B61B664926A1C68200090F0B /* CryptoDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailsVC.swift; sourceTree = "<group>"; };
+		B61B664B26A1C69E00090F0B /* CryptoDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailsVM.swift; sourceTree = "<group>"; };
+		BA7C4CD93F44B6C7076F86B3 /* Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests/Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9F9907D3812F7EFEE6DA3F1 /* Pods-DigiPayCodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigiPayCodeChallenge.release.xcconfig"; path = "Target Support Files/Pods-DigiPayCodeChallenge/Pods-DigiPayCodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B61B65DF269F935C00090F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D52428A277E6737A430E067 /* Pods_DigiPayCodeChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B61B65F5269F936300090F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A4C7B4E387AD52D660AD86 /* Pods_DigiPayCodeChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B61B6600269F936300090F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC513DC2002D469B9969A6FA /* Pods_DigiPayCodeChallenge_DigiPayCodeChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A09F3215D8BE7249CBFB0FFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F239C72144431E97CDEE7B7 /* Pods_DigiPayCodeChallenge.framework */,
+				770FF1F4833F75FC089A0841 /* Pods_DigiPayCodeChallenge_DigiPayCodeChallengeUITests.framework */,
+				9BEC39FECA9EC42A9193D587 /* Pods_DigiPayCodeChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B61B65D9269F935C00090F0B = {
+			isa = PBXGroup;
+			children = (
+				B61B65E4269F935C00090F0B /* DigiPayCodeChallenge */,
+				B61B65FB269F936300090F0B /* DigiPayCodeChallengeTests */,
+				B61B6606269F936300090F0B /* DigiPayCodeChallengeUITests */,
+				B61B65E3269F935C00090F0B /* Products */,
+				C2B66EA81AF0B3AD2E2E2748 /* Pods */,
+				A09F3215D8BE7249CBFB0FFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B61B65E3269F935C00090F0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B61B65E2269F935C00090F0B /* DigiPayCodeChallenge.app */,
+				B61B65F8269F936300090F0B /* DigiPayCodeChallengeTests.xctest */,
+				B61B6603269F936300090F0B /* DigiPayCodeChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B61B65E4269F935C00090F0B /* DigiPayCodeChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				B61B663F26A06EA800090F0B /* Constant */,
+				B61B6630269FA3E200090F0B /* Helper */,
+				B61B662A269FA38300090F0B /* Components */,
+				B61B6627269FA32600090F0B /* Scene */,
+				B61B6617269F98C100090F0B /* Model */,
+				B61B6616269F98B900090F0B /* Network */,
+				B61B6615269F988800090F0B /* Storyboards */,
+				B61B65E5269F935D00090F0B /* AppDelegate.swift */,
+				B61B65E7269F935D00090F0B /* SceneDelegate.swift */,
+				B61B65E9269F935D00090F0B /* ViewController.swift */,
+				B61B65EE269F936200090F0B /* Assets.xcassets */,
+				B61B65F0269F936200090F0B /* LaunchScreen.storyboard */,
+				B61B65F3269F936200090F0B /* Info.plist */,
+			);
+			path = DigiPayCodeChallenge;
+			sourceTree = "<group>";
+		};
+		B61B65FB269F936300090F0B /* DigiPayCodeChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B61B65FC269F936300090F0B /* DigiPayCodeChallengeTests.swift */,
+				B61B65FE269F936300090F0B /* Info.plist */,
+			);
+			path = DigiPayCodeChallengeTests;
+			sourceTree = "<group>";
+		};
+		B61B6606269F936300090F0B /* DigiPayCodeChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B61B6607269F936300090F0B /* DigiPayCodeChallengeUITests.swift */,
+				B61B6609269F936300090F0B /* Info.plist */,
+			);
+			path = DigiPayCodeChallengeUITests;
+			sourceTree = "<group>";
+		};
+		B61B6615269F988800090F0B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B61B65EB269F935D00090F0B /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B61B6616269F98B900090F0B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B61B6625269FA01D00090F0B /* CryptoServices.swift */,
+				B61B6624269F9FEA00090F0B /* Base */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B61B6617269F98C100090F0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B61B6622269F9E5500090F0B /* CryptoCurrencyListResponse.swift */,
+				B61B664626A1C07900090F0B /* CryptoDetailsInfoRes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B61B6624269F9FEA00090F0B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B61B6619269F993100090F0B /* AlamofireCodable.swift */,
+				B61B661A269F993100090F0B /* BaseResponse.swift */,
+				B61B6618269F993100090F0B /* Route.swift */,
+				B61B661B269F993100090F0B /* ServiceRoute.swift */,
+				B61B661C269F993100090F0B /* WebService.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B61B6627269FA32600090F0B /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				B61B664826A1C66100090F0B /* CrytoDetails */,
+				B61B6633269FA45000090F0B /* CryptoList */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		B61B662A269FA38300090F0B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B61B662B269FA38A00090F0B /* Base */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B61B662B269FA38A00090F0B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B61B662D269FA3BD00090F0B /* BaseVC.swift */,
+				B61B662C269FA3BD00090F0B /* BaseVM.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B61B6630269FA3E200090F0B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B61B6631269FA3F700090F0B /* Bindable.swift */,
+				B61B663B269FAFB400090F0B /* DoubleExtensions.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B61B6633269FA45000090F0B /* CryptoList */ = {
+			isa = PBXGroup;
+			children = (
+				B61B6636269FA69800090F0B /* Cell */,
+				B61B6628269FA35400090F0B /* CryptoCurrencyListVC.swift */,
+				B61B6634269FA48C00090F0B /* CryptoCurrencyListVM.swift */,
+				B61B663D26A06BA900090F0B /* CryptoListFilterVC.swift */,
+			);
+			path = CryptoList;
+			sourceTree = "<group>";
+		};
+		B61B6636269FA69800090F0B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B61B6637269FA6B400090F0B /* CryptoCurrencyTableViewCell.swift */,
+				B61B6638269FA6B400090F0B /* CryptoCurrencyTableViewCell.xib */,
+				B61B664226A0706000090F0B /* FilterTableViewCell.swift */,
+				B61B664326A0706000090F0B /* FilterTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B61B663F26A06EA800090F0B /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				B61B664026A06EB900090F0B /* Storyboards.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		B61B664826A1C66100090F0B /* CrytoDetails */ = {
+			isa = PBXGroup;
+			children = (
+				B61B664926A1C68200090F0B /* CryptoDetailsVC.swift */,
+				B61B664B26A1C69E00090F0B /* CryptoDetailsVM.swift */,
+			);
+			path = CrytoDetails;
+			sourceTree = "<group>";
+		};
+		C2B66EA81AF0B3AD2E2E2748 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A12583DB5AE9F47E2D0A1F04 /* Pods-DigiPayCodeChallenge.debug.xcconfig */,
+				E9F9907D3812F7EFEE6DA3F1 /* Pods-DigiPayCodeChallenge.release.xcconfig */,
+				BA7C4CD93F44B6C7076F86B3 /* Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests.debug.xcconfig */,
+				8E6C89E22F419727FFDF1506 /* Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests.release.xcconfig */,
+				973A5A3EC1034523127D1507 /* Pods-DigiPayCodeChallengeTests.debug.xcconfig */,
+				5196483C4D4DFE03CBDE096D /* Pods-DigiPayCodeChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B61B65E1269F935C00090F0B /* DigiPayCodeChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B61B660C269F936300090F0B /* Build configuration list for PBXNativeTarget "DigiPayCodeChallenge" */;
+			buildPhases = (
+				2FB7583A65D7F16F23A737CE /* [CP] Check Pods Manifest.lock */,
+				B61B65DE269F935C00090F0B /* Sources */,
+				B61B65DF269F935C00090F0B /* Frameworks */,
+				B61B65E0269F935C00090F0B /* Resources */,
+				BDEC203106B8D5483FA345EC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigiPayCodeChallenge;
+			productName = DigiPayCodeChallenge;
+			productReference = B61B65E2269F935C00090F0B /* DigiPayCodeChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B61B65F7269F936300090F0B /* DigiPayCodeChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B61B660F269F936300090F0B /* Build configuration list for PBXNativeTarget "DigiPayCodeChallengeTests" */;
+			buildPhases = (
+				CC3CF81570533BEF78A590AA /* [CP] Check Pods Manifest.lock */,
+				B61B65F4269F936300090F0B /* Sources */,
+				B61B65F5269F936300090F0B /* Frameworks */,
+				B61B65F6269F936300090F0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B61B65FA269F936300090F0B /* PBXTargetDependency */,
+			);
+			name = DigiPayCodeChallengeTests;
+			productName = DigiPayCodeChallengeTests;
+			productReference = B61B65F8269F936300090F0B /* DigiPayCodeChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B61B6602269F936300090F0B /* DigiPayCodeChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B61B6612269F936300090F0B /* Build configuration list for PBXNativeTarget "DigiPayCodeChallengeUITests" */;
+			buildPhases = (
+				A1E89FEF6C523CEA945B2905 /* [CP] Check Pods Manifest.lock */,
+				B61B65FF269F936300090F0B /* Sources */,
+				B61B6600269F936300090F0B /* Frameworks */,
+				B61B6601269F936300090F0B /* Resources */,
+				B611BE65354226F438472250 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B61B6605269F936300090F0B /* PBXTargetDependency */,
+			);
+			name = DigiPayCodeChallengeUITests;
+			productName = DigiPayCodeChallengeUITests;
+			productReference = B61B6603269F936300090F0B /* DigiPayCodeChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B61B65DA269F935C00090F0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B61B65E1269F935C00090F0B = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					B61B65F7269F936300090F0B = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B61B65E1269F935C00090F0B;
+					};
+					B61B6602269F936300090F0B = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B61B65E1269F935C00090F0B;
+					};
+				};
+			};
+			buildConfigurationList = B61B65DD269F935C00090F0B /* Build configuration list for PBXProject "DigiPayCodeChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B61B65D9269F935C00090F0B;
+			productRefGroup = B61B65E3269F935C00090F0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B61B65E1269F935C00090F0B /* DigiPayCodeChallenge */,
+				B61B65F7269F936300090F0B /* DigiPayCodeChallengeTests */,
+				B61B6602269F936300090F0B /* DigiPayCodeChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B61B65E0269F935C00090F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61B65F2269F936200090F0B /* LaunchScreen.storyboard in Resources */,
+				B61B65EF269F936200090F0B /* Assets.xcassets in Resources */,
+				B61B65ED269F935D00090F0B /* Main.storyboard in Resources */,
+				B61B664526A0706000090F0B /* FilterTableViewCell.xib in Resources */,
+				B61B663A269FA6B400090F0B /* CryptoCurrencyTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B61B65F6269F936300090F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B61B6601269F936300090F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FB7583A65D7F16F23A737CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigiPayCodeChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1E89FEF6C523CEA945B2905 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B611BE65354226F438472250 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests/Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests/Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests/Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDEC203106B8D5483FA345EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigiPayCodeChallenge/Pods-DigiPayCodeChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigiPayCodeChallenge/Pods-DigiPayCodeChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigiPayCodeChallenge/Pods-DigiPayCodeChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC3CF81570533BEF78A590AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigiPayCodeChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B61B65DE269F935C00090F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61B65EA269F935D00090F0B /* ViewController.swift in Sources */,
+				B61B664C26A1C69E00090F0B /* CryptoDetailsVM.swift in Sources */,
+				B61B663E26A06BA900090F0B /* CryptoListFilterVC.swift in Sources */,
+				B61B6639269FA6B400090F0B /* CryptoCurrencyTableViewCell.swift in Sources */,
+				B61B662E269FA3BD00090F0B /* BaseVM.swift in Sources */,
+				B61B6623269F9E5500090F0B /* CryptoCurrencyListResponse.swift in Sources */,
+				B61B661D269F993100090F0B /* Route.swift in Sources */,
+				B61B6621269F993100090F0B /* WebService.swift in Sources */,
+				B61B664726A1C07A00090F0B /* CryptoDetailsInfoRes.swift in Sources */,
+				B61B664126A06EB900090F0B /* Storyboards.swift in Sources */,
+				B61B65E6269F935D00090F0B /* AppDelegate.swift in Sources */,
+				B61B664426A0706000090F0B /* FilterTableViewCell.swift in Sources */,
+				B61B6626269FA01D00090F0B /* CryptoServices.swift in Sources */,
+				B61B6629269FA35400090F0B /* CryptoCurrencyListVC.swift in Sources */,
+				B61B6632269FA3F700090F0B /* Bindable.swift in Sources */,
+				B61B664A26A1C68200090F0B /* CryptoDetailsVC.swift in Sources */,
+				B61B662F269FA3BD00090F0B /* BaseVC.swift in Sources */,
+				B61B661F269F993100090F0B /* BaseResponse.swift in Sources */,
+				B61B663C269FAFB400090F0B /* DoubleExtensions.swift in Sources */,
+				B61B661E269F993100090F0B /* AlamofireCodable.swift in Sources */,
+				B61B6620269F993100090F0B /* ServiceRoute.swift in Sources */,
+				B61B65E8269F935D00090F0B /* SceneDelegate.swift in Sources */,
+				B61B6635269FA48C00090F0B /* CryptoCurrencyListVM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B61B65F4269F936300090F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61B65FD269F936300090F0B /* DigiPayCodeChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B61B65FF269F936300090F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B61B6608269F936300090F0B /* DigiPayCodeChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B61B65FA269F936300090F0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B61B65E1269F935C00090F0B /* DigiPayCodeChallenge */;
+			targetProxy = B61B65F9269F936300090F0B /* PBXContainerItemProxy */;
+		};
+		B61B6605269F936300090F0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B61B65E1269F935C00090F0B /* DigiPayCodeChallenge */;
+			targetProxy = B61B6604269F936300090F0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B61B65EB269F935D00090F0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B61B65EC269F935D00090F0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B61B65F0269F936200090F0B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B61B65F1269F936200090F0B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B61B660A269F936300090F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B61B660B269F936300090F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B61B660D269F936300090F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A12583DB5AE9F47E2D0A1F04 /* Pods-DigiPayCodeChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4945R7GGN6;
+				INFOPLIST_FILE = DigiPayCodeChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = digiPayCodeChallenge.app.com.t.DigiPayCodeChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B61B660E269F936300090F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9F9907D3812F7EFEE6DA3F1 /* Pods-DigiPayCodeChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4945R7GGN6;
+				INFOPLIST_FILE = DigiPayCodeChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = digiPayCodeChallenge.app.com.t.DigiPayCodeChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B61B6610269F936300090F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 973A5A3EC1034523127D1507 /* Pods-DigiPayCodeChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4945R7GGN6;
+				INFOPLIST_FILE = DigiPayCodeChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = digiPayCodeChallenge.app.com.t.DigiPayCodeChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigiPayCodeChallenge.app/DigiPayCodeChallenge";
+			};
+			name = Debug;
+		};
+		B61B6611269F936300090F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5196483C4D4DFE03CBDE096D /* Pods-DigiPayCodeChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4945R7GGN6;
+				INFOPLIST_FILE = DigiPayCodeChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = digiPayCodeChallenge.app.com.t.DigiPayCodeChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigiPayCodeChallenge.app/DigiPayCodeChallenge";
+			};
+			name = Release;
+		};
+		B61B6613269F936300090F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA7C4CD93F44B6C7076F86B3 /* Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4945R7GGN6;
+				INFOPLIST_FILE = DigiPayCodeChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = digiPayCodeChallenge.app.com.t.DigiPayCodeChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DigiPayCodeChallenge;
+			};
+			name = Debug;
+		};
+		B61B6614269F936300090F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E6C89E22F419727FFDF1506 /* Pods-DigiPayCodeChallenge-DigiPayCodeChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4945R7GGN6;
+				INFOPLIST_FILE = DigiPayCodeChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = digiPayCodeChallenge.app.com.t.DigiPayCodeChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DigiPayCodeChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B61B65DD269F935C00090F0B /* Build configuration list for PBXProject "DigiPayCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61B660A269F936300090F0B /* Debug */,
+				B61B660B269F936300090F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B61B660C269F936300090F0B /* Build configuration list for PBXNativeTarget "DigiPayCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61B660D269F936300090F0B /* Debug */,
+				B61B660E269F936300090F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B61B660F269F936300090F0B /* Build configuration list for PBXNativeTarget "DigiPayCodeChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61B6610269F936300090F0B /* Debug */,
+				B61B6611269F936300090F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B61B6612269F936300090F0B /* Build configuration list for PBXNativeTarget "DigiPayCodeChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B61B6613269F936300090F0B /* Debug */,
+				B61B6614269F936300090F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B61B65DA269F935C00090F0B /* Project object */;
+}
